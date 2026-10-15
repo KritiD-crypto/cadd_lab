@@ -21,10 +21,10 @@ jobs:
 
       - name: Login to Azure
         uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+        with: 
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C8074CD58D084BE383793FF2E6FEB556 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_08C9D0CBC33B46F6BD1159AAEBC7BD6C }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2AC4A40F124C40454A8D3CB8FC94489C }}
 
       - name: Deploy HTML to Azure
         uses: azure/webapps-deploy@v3
